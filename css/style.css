@@ -14,8 +14,48 @@
 
   /* utilities */
 
+  
+/* content */
 
+.box-info{
+  background-color: #C2FFCF;
+  border-radius: 10px;
+  margin: 30px;
+}
+
+#testo {
+  display: flex;
+  flex-direction: column;
+  color: #3B804A;
+  padding: 35px 50px;
+  row-gap: 10px;
+
+}
+
+#amsterdam {
+  margin: 25px 0px;
+  color: #3B804A;
+}
+
+
+#eta{
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #3B804A;
+}
   
-  
-  /* content */
-  
+#totalPrice{
+  margin-top: 20px;
+}
+
+#acquista{
+  background-color: #3B804A;
+  color: #C2FFCF;
+  padding: 5px 10px;
+  margin: 50px 0px 10px 0px;
+  display: flex;
+  width: fit-content;
+  align-self: center;
+  border-radius: 10px;
+
+}

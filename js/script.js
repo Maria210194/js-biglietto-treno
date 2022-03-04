@@ -13,11 +13,11 @@ console.log('JS OK');
 const numeroKm = prompt('Inserisci il numero dei km da percorrere');
 const eta = prompt('Inserisci la tua età');
 
-console.log('Numero Km inseriti ', numeroKm);
+console.log('Numero km inseriti ', numeroKm);
 console.log('Età inserita ', eta);
 
-document.getElementById('numeroKm').innerHTML = 'Il numero dei km inseriti è ' + numeroKm;
-document.getElementById('eta').innerHTML = 'La tua età è ' + eta;
+document.getElementById('numeroKm').innerHTML = 'Il numero dei km inseriti è: ' + numeroKm + ' km';
+document.getElementById('eta').innerHTML = 'La tua età è: ' + eta + ' anni';
 
 // Calcolo il prezzo totale del biglietto
 
@@ -34,17 +34,17 @@ const prezzoScontatoAnziani = (prezzoDecimale - (prezzoDecimale * discount40)).t
 if (eta < 18) {
 
     console.log('Pezzo biglietto minorenni ', prezzoScontatoMinorenni);
-    document.getElementById('totalPrice').innerHTML = 'Il prezzo del tuo biglietto è: ' + prezzoScontatoMinorenni + '€';
+    document.getElementById('totalPrice').innerHTML = 'Il prezzo del tuo biglietto è: ' + prezzoScontatoMinorenni + ' €';
 
 } else if (eta >= 65) {
 
     console.log('Prezzo biglietto anziani ', prezzoScontatoAnziani);
-    document.getElementById('totalPrice').innerHTML = 'Il prezzo del tuo biglietto è: ' + prezzoScontatoAnziani + '€';
+    document.getElementById('totalPrice').innerHTML = 'Il prezzo del tuo biglietto è: ' + prezzoScontatoAnziani + ' €';
 
 } else {
 
-    console.log('Prezzo del biglietto è ', prezzoDecimale);
-    document.getElementById('totalPrice').innerHTML = 'Il prezzo del tuo biglietto è: ' + prezzoDecimale + '€';
+    console.log('Prezzo del biglietto è: ', prezzoDecimale);
+    document.getElementById('totalPrice').innerHTML = 'Il prezzo del tuo biglietto è: ' + prezzoDecimale + ' €';
 
 }
 
