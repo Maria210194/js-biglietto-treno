@@ -28,8 +28,8 @@ const prezzoDecimale = prezzoBiglietti.toFixed(2);
 const discount20 = 0.2
 const discount40 = 0.4
 
-const prezzoScontatoMinorenni = (prezzoDecimale - (prezzoDecimale * discount20));
-const prezzoScontatoAnziani = (prezzoDecimale - (prezzoDecimale * discount40));
+const prezzoScontatoMinorenni = (prezzoDecimale - (prezzoDecimale * discount20)).toFixed(2);
+const prezzoScontatoAnziani = (prezzoDecimale - (prezzoDecimale * discount40)).toFixed(2);
 
 if (eta < 18) {
 
